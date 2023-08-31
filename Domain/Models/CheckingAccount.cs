@@ -1,8 +1,10 @@
 namespace PersonalFinancesService.Domain.Models;
 
-public class FinancialAccount {
+public class CheckingAccount
+{
     public int Id { get; set; }
     public string FinancialInstitutionName { get; set; } = string.Empty;
-    public bool Default { get; set; }
+    public bool IsMain { get; set; }
+    public IEnumerable<Entry> Entries { get; set; } = new List<Entry>(1);
 
 }
