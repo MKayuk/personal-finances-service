@@ -1,2 +1,8 @@
-obj/*
-bin/*
+src/PersonalFinancesService/obj/*
+src/PersonalFinancesService/bin/*
+tests/PersonalFinances.Tests/obj/*
+tests/PersonalFinances.Tests/bin/*
+*.dll
+*.props
+*.pdb
+*.cache
