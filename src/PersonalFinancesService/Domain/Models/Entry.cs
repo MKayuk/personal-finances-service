@@ -11,6 +11,7 @@ public class Entry
     public string Establishment { get; set; } = string.Empty;
     public string CheckingAccount { get; set; } = string.Empty;
     public bool IsFixed { get; set; } = false;
+    public DateTime FixedUntil {get; set;}
     public int InstallmentNumber { get; set; }
     public int TotalInstallments { get; set; }
     public IEnumerable<string>? Tags { get; set; }
