@@ -1,9 +1,12 @@
+using Microsoft.EntityFrameworkCore;
 using PersonalFinancesService.Domain.Enums;
 
 namespace PersonalFinancesService.Domain.Models;
 
+[PrimaryKey(nameof(Id))]
 public class Entry
 {
+    public int Id { get; set; }
     public string Classification { get; set; } = string.Empty;
     public string Category { get; set; } = string.Empty;
     public DateTime Date { get; set; }

@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace PersonalFinancesService.Domain.Models;
 
+[PrimaryKey(nameof(Id))]
 public class CheckingAccount
 {
     public int Id { get; set; }

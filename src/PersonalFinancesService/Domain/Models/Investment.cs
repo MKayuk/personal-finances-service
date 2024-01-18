@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace PersonalFinancesService.Domain.Models;
 
+[PrimaryKey(nameof(Id))]
 public class Investment
 {
     public int Id { get; set; }
